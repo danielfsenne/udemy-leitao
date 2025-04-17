@@ -25,7 +25,7 @@
     </nav>
     <div class="pagina"></div>
     <script>
-        function navegarViaAjax(url, seletor, push = true) {
+        function navegarViaAjax(url , seletor, push = true) {
             if(!url || !seletor) return
             const elemento = document.querySelector(seletor)
             fetch(url)
