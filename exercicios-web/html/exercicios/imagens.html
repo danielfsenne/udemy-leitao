@@ -1,0 +1,59 @@
+<div class="wm-slide">
+    <p>
+        <img src="imagem-1.webp" alt="" width="513" height="342" title="Muro da Cidade por Tarso Basso">
+    </p>
+    <p>
+        <img src="imagem-2.webp" alt="" width="513" height="342" title="Muro da Cidade por Tarso Basso">
+    </p>
+    <p>
+        <img src="imagem-3.webp" alt="" width="513" height="342" title="Muro da Cidade por Tarso Basso">
+    </p>
+    <p>
+        <img src="imagem-4.webp" alt="" width="513" height="342" title="Muro da Cidade por Tarso Basso">
+    </p>
+    <p>
+        <img src="imagem-5.jpg" alt="" width="513" height="342" title="Muro da Cidade por Tarso Basso">
+    </p>
+</div>
+
+<style>
+    .wm-slide {
+        position: relative;
+        width: 513px;
+        height: 342px;
+        overflow: hidden;
+    }
+
+    .wm-slide p {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        display: block;
+        margin: 0;
+        transition: all 0.7s ease;
+    }
+
+    .wm-slide p.active {
+        left: 0;
+    }
+</style>
+
+<script>
+    const slides = document.querySelectorAll('.wm-slide p');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            slide.style.left = i === index ? '0' : '100%';
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    showSlide(currentIndex);
+    setInterval(nextSlide, 2000); 
+</script>

@@ -1,0 +1,44 @@
+<h1>Projeto</h1>
+
+<ul class="tree">
+    <li>
+        <span wm-folder>BackEnd</span>
+        <ul style="display: none;">
+            <li>
+                <span wm-folder>App</span>
+                <ul style="display: none;">
+                    <li>produto.js</li>
+                    <li>usuario.js</li>
+                    <li>venda.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span wm-folder>Config</span>
+        <ul style="display: none;">
+            <li>banco.js</li>
+            <li>rotas.js</li>
+            <li>servidor.js</li>
+        </ul>
+    </li>
+    <li>
+        <span wm-folder>Frontend</span>
+        <ul style="display: none;">
+            <li>app.css</li>
+            <li>app.js</li>
+            <li>app.html</li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.onclick = function() {
+            const ul = folder.nextElementSibling;
+            if (ul) {
+                ul.style.display = ul.style.display === 'none' ? 'block' : 'none';
+            }
+        };
+    });
+</script>
