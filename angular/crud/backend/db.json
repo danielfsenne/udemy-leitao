@@ -1,24 +1,39 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Caneta BIC Preta",
       "price": 5.89
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Notebook Mac Pro",
       "price": 12000.89
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Sansung S20+ Ultra",
       "price": "7520.89"
     },
     {
       "name": "Lapis Preto Básico",
       "price": "1.50",
-      "id": 4
+      "id": "4"
+    },
+    {
+      "id": "8d9b",
+      "name": "Sansung Galaxy X24",
+      "price": "3000"
+    },
+    {
+      "id": "de88",
+      "name": "Civic",
+      "price": "80.000"
+    },
+    {
+      "id": "b759",
+      "name": "Sansung Galaxy X24",
+      "price": "3000"
     }
   ]
 }
